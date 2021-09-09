@@ -25,6 +25,7 @@ export default {
         this.getTypes()
     },
     methods: {
+        //get place type from database
         getTypes(){
             axios
                 .get('api/v1/get-types')
@@ -39,7 +40,7 @@ export default {
                 })
         },
         set(){
-            this.$store.state.types = this.aselected
+            this.$store.state.types = this.aselected 
         }
     }
 }
